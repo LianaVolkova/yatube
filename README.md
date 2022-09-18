@@ -1,3 +1,55 @@
-# hw05_final
+# Cоциальная сеть Yatube
 
-[![CI](https://github.com/yandex-praktikum/hw05_final/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/yandex-praktikum/hw05_final/actions/workflows/python-app.yml)
+## Описание
+
+Это площадка для ведения личных дневников. Она дает пользователям возможность создать учетную запись, публиковать записи, подписываться на любимых авторов и комментировать записи. <br>
+Включает в себя администрирование, управление пользователями, работу с записями (создание, редактирование, удаление), объединение записей по сообществам, пагинацию, модель отправки электронных сообщений пользователям, основные шаблоны для страниц сайта. Для хранение данных используется SQLite.
+
+## Стек технологий
+
+- Python 3.7
+- Django 2.2.16
+
+## Как запустить проект:
+
+Клонировать репозиторий и перейти в него в командной строке:
+
+``` 
+git clone git@github.com:LianaVolkova/hw05_final.git
+```
+
+Cоздать и активировать виртуальное окружение:
+
+``` 
+python -m venv env
+```
+
+``` 
+source venv/Scripts/activate
+```
+
+``` 
+python -m pip install --upgrade pip
+```
+
+Установить зависимости из файла requirements.txt:
+
+``` 
+pip install -r requirements.txt
+```
+
+Выполнить миграции:
+
+``` 
+python manage.py migrate
+```
+
+Запустить проект:
+
+``` 
+python manage.py runserver
+```
+
+### Автор
+
+Волкова Лиана
